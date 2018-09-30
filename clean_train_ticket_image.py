@@ -5,7 +5,6 @@ important text from the image."""
 
 import numpy as np
 import cv2 as cv
-import matplotlib.pyplot as plt
 
 MAX_COLOR_VALUE = 255
 RED_COLOR_THRESHOLD = 180
@@ -63,5 +62,7 @@ def remove_blue_from_image(blue_channel, green_channel, red_channel):
     pass
 
 
-img = clean_train_ticket_image(train_ticket_location)
-plt.imshow(img[1])
+if __name__ == '__main__':
+    import matplotlib.pyplot as plt
+    img = clean_train_ticket_image(train_ticket_location)
+    plt.imshow(img)
