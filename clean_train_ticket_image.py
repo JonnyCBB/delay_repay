@@ -26,7 +26,7 @@ def clean_train_ticket_image(
                                           greyscale_threshold,
                                           greyscale_threshold,
                                           cv.THRESH_BINARY)
-    return binarized_ticket_image
+    return binarized_ticket_image[1]
 
 
 def remove_dominant_color(image):
